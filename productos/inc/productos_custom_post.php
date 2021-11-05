@@ -59,7 +59,29 @@ function productos_catalogo() {
 		'exclude_from_search'   => false,//esto hace que se pueda paginar o no el contenido
 		'publicly_queryable'    => true,
 		'rewrite'               => $rewrite,
-		'capability_type'       => 'post',
+		'capability_type'       => 'post',		
+		/*'show_in_rest'		=> true,
+		'template' => array(             
+                
+                array( 'core/spacer', array('height' => 50,) ),
+				array( 'core/heading', array('placeholder' => 'Título del proyecto','fontSize'=>'large',) ),
+				array( 'core/heading', array('placeholder' => 'Subtítulo del proyecto','fontSize'=>'medium',) ),
+				array( 'core/columns', array(), array(
+                    array( 'core/column', array('verticalAlignment'=>'center',), array(
+                        array( 'core/image', array() ),
+                    ) ),
+                    array( 'core/column', array('verticalAlignment'=>'center',), array(						
+                        array('core/group',array('backgroundColor'=>'azul-oscuro','className' => 'redondear'),array(
+                        array( 'core/paragraph', array(
+                            'placeholder' => 'Añade el contenido del proyecto',
+							'textColor'=>'white',
+                        ) ),
+                    ) ) ),
+                ) ) )
+            ),*/
+            
+            /*'template_lock' => 'all',*//*insert*/
+			
 	);
 	register_post_type( 'Productos', $args );
 
